@@ -1,0 +1,172 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "topbar"
+		position = { x=-4 y=-1 }	
+		size = { width=100%% height=100%% }
+		
+		iconType = {
+			name ="background"
+			spriteType = "GFX_topbar_background"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		buttonType = {
+			name = "reopen_ingame_lobby"
+			quadTextureSprite ="GFX_reopen_lobby"
+			position = { x= 188 y = -22 }
+			Orientation = "LOWER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			name ="reopen_ingame_lobby_label"
+			position = { x= 210 y = -16 }
+			font = "hoi_16mbs"
+			text = "LOBBY"
+			format = centre
+			maxWidth = 57
+			maxHeight = 24
+			fixedsize = yes
+			Orientation = "LOWER_LEFT"
+			allwaystransparent = yes
+		}
+		containerWindowType = {
+			name = "toggle_music_commands_win"
+			position = { x= -259 y = 39}
+			show_position = { x= -450 y = 39 }
+			show_animation_type = decelerated
+			hide_animation_type = accelerated
+			animation_time = 450
+			Orientation = upper_right	
+			clipping = no
+			size = { width=228 height=42 }
+	
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_playlist_bg"
+			}
+
+			buttonType = {
+				name = "music_pause_button"
+				quadTextureSprite ="GFX_music_pause_button"
+				position = { x= -195 y = 6 }
+				Orientation = "UPPER_RIGHT"
+			}	
+
+			buttonType = {
+				name = "music_next_button"
+				quadTextureSprite ="GFX_music_next_button"
+				position = { x= -165 y = 6 }
+				Orientation = "UPPER_RIGHT"
+				pdx_tooltip = "MUSICPLAYER_NEXT"
+			}
+
+			buttonType = {
+				name = "musicplayer_button"
+				quadTextureSprite ="GFX_musicplayer_button"
+				position = { x= -50 y = 6 }
+				Orientation = "UPPER_RIGHT"
+				pdx_tooltip = "MUSICPLAYER_OPEN_PLAYER"
+			}			
+				
+		}		
+		
+		buttonType = {
+			name = "player_flag"
+			quadTextureSprite ="GFX_shield_medium"
+			position = { x= 12 y = 15 }
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			shortcut = "q"
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_observer_flag_overlay"
+			position = { x= 11 y = 15 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		
+		buttonType = {
+			name = "menu_button"
+			position = { x = -35 y = 7 }
+			quadTextureSprite ="GFX_menu_button"
+			buttonText = ""
+			buttonFont = "Main_14_black"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "MAIN_MENU"
+		}
+
+		buttonType = {
+			name = "playlist_button"
+			position = { x = -260 y = 3 }
+			quadTextureSprite ="GFX_playlist_button"
+			buttonText = ""
+			buttonFont = "Main_14_black"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "MUSICPLAYER_TOGGLE_CONTROLLER"
+		}		
+		
+		containerWindowType = {
+			name = "country_menu_window"
+			position = { x=204 y=38 }
+			size = { width=100%% height=30 }
+			
+			buttonType = {
+				name = "decisionview_button"
+				quadTextureSprite ="GFX_topbar_decisionview_button"
+				position = { x= -104 y = 0 }
+				shortcut = "w"
+				Orientation = "UPPER_LEFT"
+				clicksound = click_close
+				oversound = ui_menu_over
+			}
+
+			buttonType = {
+				name = "diplomacy_button"
+				quadTextureSprite ="GFX_topbar_diplomacy"
+				position = { x= -49 y = 0 }
+				Orientation = "UPPER_LEFT"
+				shortcut = "e"
+				clicksound = click_close
+				oversound = ui_menu_over
+			}
+		
+		}
+		
+		#windowType = {
+		#	name = "pause_window"
+		#	backGround=""
+		#	position = { x=-203 y= 100 }
+		#	size = { x=406 y=70 }
+		#	dontRender = ""
+		#	horizontalBorder= ""
+		#	verticalBorder= ""
+		#	fullScreen = no
+		#	moveable = 0
+		#	Orientation = "CENTER_UP"
+		#	
+
+		#	
+		#	#Needs localisation change
+		#	instantTextBoxType = {
+		#		name = "pause_banner_text"
+		#		position = { x = 140 y = 9 }
+		#		textureFile = ""
+		#		font = "vic_22"
+		#		borderSize = {x = 4 y = 4}
+		#		text = "CORE_PAUSED"
+		#		maxWidth = 120
+		#		maxHeight = 27
+		#		format = center
+		#	}
+		#}
+	}
+}
