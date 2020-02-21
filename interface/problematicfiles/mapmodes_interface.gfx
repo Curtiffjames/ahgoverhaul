@@ -82,10 +82,10 @@ spriteTypes = {
 	#	noOfFrames = 2
 	#}
 
-	#spriteType = {
-	#	name = "GFX_mapmodes_bg"
-	#	texturefile = "gfx//interface//mapmodes_bg.dds"
-	#}
+	spriteType = {
+		name = "GFX_mapmodes_bg"
+		texturefile = "gfx//interface//mapmodes_bg.dds"
+	}
 	#spriteType = {
 	#	name = "GFX_mapmode_marker"
 	#	texturefile = "gfx//interface//mapmode_marker.dds"
