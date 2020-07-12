@@ -19,6 +19,22 @@ on_actions = {
 						do_german_renames = yes
 					}
 
+					### OCC ###
+					if = {
+						limit = {
+							ROOT = {tag = OCC}
+							}
+						do_occitanian_renames = yes
+					}
+
+					### NSA ###
+					if = {
+						limit = {
+							ROOT = {tag = NSA}
+							}
+						do_lower_german_renames = yes
+					}
+
 					### POL ###
 					if = {
 						limit = {
@@ -221,7 +237,7 @@ on_actions = {
 					### IRQ ###
 					if = {
 						limit = {
-							ROOT = {OR = { tag = EGY tag = ALG tag = SGR tag = SUD tag = IRQ tag = KUW tag = PAL tag = JOR }}
+							ROOT = {OR = {tag = IRQ tag = SAU}}
 						}
 						do_iraqi_renames = yes
 					}
@@ -306,6 +322,14 @@ on_actions = {
 						}
 						do_swedish_renames = yes
 					}
+					
+					### ETH ###
+					if = {
+						limit = {
+							ROOT = {tag = ETH}
+						}
+						do_ethiopian_renames = yes
+					}					
 			}
 		}
 	}
